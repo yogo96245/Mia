@@ -1,0 +1,36 @@
+.background {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background::before {
+    content: "";
+    background-image: url('background.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+  }
+
+  .transbox {
+    display: flex;
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid black;
+  }
+
+  .transbox p {
+    margin: 5%;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+  }
