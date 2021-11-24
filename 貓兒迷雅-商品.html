@@ -15,6 +15,7 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
   <script src="library.js"></script>
+  <script src="jq-multilang.js"></script>
   <link rel="icon" href="title icon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="title icon.ico" type="image/x-icon">
   <style>
@@ -23,7 +24,7 @@
 
 <body>
   <include src="include.html"></include>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: larger;">
     <a class="navbar-brand" href="index.html">NekoMia</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,16 +34,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="貓兒迷雅-畫廊.html">畫廊<span class="sr-only"></span></a>
+          <a class="nav-link jq-multilang-gallery" data-lang-zh-tw="畫廊" data-lang-en="gallery" data-lang-jp="ギャラリー"
+            href="貓兒迷雅-畫廊.html"> 畫廊 <span class="sr-only"></span>
+          </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="貓兒迷雅-商品.html">商品</a>
+          <a class="nav-link jq-multilang-commodity" data-lang-zh-tw="商品" data-lang-en="commodity " data-lang-jp="商品"
+            href="貓兒迷雅-商品.html"> 商品
+          </a>
         </li>
+        <!--
         <li class="nav-item active">
           <a class="nav-link" href="chart.html">Chart.js Test</a>
         </li>
+-->
       </ul>
     </div>
+    <select onchange="mutilang(this.value)">
+      <option value="zh-tw">中文(台灣)</option>
+      <option value="en">English</option>
+      <option value="jp">日本語</option>
+    </select>
   </nav>
   <div style="display:flex;">
     <div class="transbox" style="width: 800px; height: 500px;">

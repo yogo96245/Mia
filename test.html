@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="jq-multilang.js"></script>
+</head>
+
+<body>
+  <p class="jq-multilang-enabled" data-lang-zh-tw="我的文字" data-lang-en="My Text" data-lang-jp="私のテキスト">我的文字</p>
+  <p class="jq-multilang-enabled2" data-lang-zh-tw="我" data-lang-en="My" data-lang-jp="私">我</p>
+  <button onclick="$('.jq-multilang-enabled').jqmultilang('en');">English</button>
+  <button onclick="$('.jq-multilang-enabled').jqmultilang('zh-tw');">中文(台灣)</button>
+  <select onchange="mutilang(this.value)">
+    <option value="zh-tw">中文(台灣)</option>
+    <option value="en">English</option>
+    <option value="jp">日本語</option>
+  </select>
+</body>
+<script>
+  function mutilang (language) {
+    $('.jq-multilang-enabled').jqmultilang(language);
+    $('.jq-multilang-enabled2').jqmultilang(language);
+  }
+</script>
+
+</html>
