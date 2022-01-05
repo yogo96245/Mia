@@ -18,6 +18,7 @@
 .background::before {
   content: "";
   background-image: url("background.png");
+  background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
