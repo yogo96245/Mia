@@ -50,7 +50,7 @@
           </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link jq-multilang-commodity" 
+          <a class="nav-link jq-multilang-messageboard" 
              data-lang-zh-tw="留言板" data-lang-en="message board" data-lang-jp="伝言板"
              href="message_board.php"> 留言板
           </a>
@@ -104,9 +104,9 @@
     var $database = null;
     function __construct() {
       //connect
-      $dbhost = 'mysql:host=localhost;dbname=db_messages;';
-      $account = 'root';
-      $password = 'Jkwad54542Jared88045';
+      $dbhost = 'mysql:host=us-cdbr-east-05.cleardb.net; dbname=heroku_5e90ae2c91d8181;';
+      $account = 'bbea49bf3b2653';
+      $password = 'a5bfdf38';
 
       $this->database = new PDO ($dbhost, $account, $password);
     }

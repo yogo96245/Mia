@@ -1,4 +1,3 @@
-
 <?php
   include_once ('message.php');
   // 設定時區
