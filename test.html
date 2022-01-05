@@ -1,31 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="jq-multilang.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS only --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- JS only --->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="../library.js"></script>
+  <script src="../jq-multilang.js"></script>
+  <link rel="icon" href="../title icon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../title icon.ico" type="image/x-icon">
+  <style>
+  </style>
 </head>
-
 <body>
-  <p class="jq-multilang-enabled" data-lang-zh-tw="我的文字" data-lang-en="My Text" data-lang-jp="私のテキスト">我的文字</p>
-  <p class="jq-multilang-enabled2" data-lang-zh-tw="我" data-lang-en="My" data-lang-jp="私">我</p>
-  <button onclick="$('.jq-multilang-enabled').jqmultilang('en');">English</button>
-  <button onclick="$('.jq-multilang-enabled').jqmultilang('zh-tw');">中文(台灣)</button>
-  <select onchange="mutilang(this.value)">
-    <option value="zh-tw">中文(台灣)</option>
-    <option value="en">English</option>
-    <option value="jp">日本語</option>
-  </select>
-</body>
-<script>
-  function mutilang (language) {
-    $('.jq-multilang-enabled').jqmultilang(language);
-    $('.jq-multilang-enabled2').jqmultilang(language);
-  }
-</script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: larger;">
+    <a class="navbar-brand" href="index.html">NekoMia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-</html>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link jq-multilang-gallery" 
+             data-lang-zh-tw="畫廊" data-lang-en="gallery" data-lang-jp="ギャラリー"
+             href="貓兒迷雅-畫廊.html"> 畫廊 <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link jq-multilang-commodity" 
+             data-lang-zh-tw="商品" data-lang-en="commodity " data-lang-jp="商品"
+             href="貓兒迷雅-商品.html"> 商品 
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link jq-multilang-commodity" 
+             data-lang-zh-tw="留言板" data-lang-en="message board" " data-lang-jp="伝言板"
+             href="MessageBoard/message_board.php"> 留言板
+          </a>
+        </li>
+<!--
+        <li class="nav-item active">
+          <a class="nav-link" href="chart.html">Chart.js Test</a>
+        </li>
+-->
+      </ul>
+    </div>
+    <select onchange="mutilang(this.value)">
+      <option value="zh-tw">中文(台灣)</option>
+      <option value="en">English</option>
+      <option value="jp">日本語</option>
+    </select>
+    </nav>
