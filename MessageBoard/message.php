@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
 
   <meta charset="utf-8">
@@ -22,12 +21,11 @@
   <link rel="shortcut icon" href="../title icon.ico" type="image/x-icon">
   
   <style>
-     @import "../style.css";
   </style>
   
 </head>
-<body>
-  <!--<div class="background"></div>-->
+<body style="background-image: url('../background.png'); background-size: cover;">
+  
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: larger;">
     <a class="navbar-brand" href="../index.html">NekoMia</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -57,6 +55,7 @@
         </li>
       </ul>
     </div>
+    
     <select onchange="mutilang(this.value)">
       <option value="zh-tw">中文(台灣)</option>
       <option value="en">English</option>
@@ -117,7 +116,6 @@
     }
   }
 ?>
+
 </body>
 </html>
-
-
