@@ -72,13 +72,13 @@
     </div>
     <div class=board__hr></div>
     <section>";
+
   class Message {
     var $name;
     var $time;
     var $content;
 
     function __construct ($name, $time, $content) {
-      
       $this->name = $name;
       $this->time = $time;
       $this->content = $content;
@@ -119,3 +119,5 @@
 ?>
 </body>
 </html>
+
+
